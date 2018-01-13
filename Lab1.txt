@@ -1,0 +1,32 @@
+Lab 1
+Bradley Bergstrom
+1/13/18
+
+Exercise 1
+1.done
+2.done
+3. I think the code that got executed was http://localhost:50440/home/about
+4.done
+5. From what I understand, controllers have routes that are set by the devolopers,and these routes control what action the URL is mapped to.
+
+Exercise 2
+1. The ActionResult function About().
+2. A message with the string "Your contact page.".
+3. In Views/Home/About.cshtml
+4. Just as I typed out above, the controller knows that it can find the about view because its under the home view. 
+5. About.cshtml
+6.done
+7.done
+
+Exercose 3
+1.done
+2.done
+3. Server error, because we never set any views for our new controller.
+4.done
+5. Still see a server error.
+6.done
+7.done
+8. Now I see my new view in all of its glory. 
+
+Exercise 4
+1.
