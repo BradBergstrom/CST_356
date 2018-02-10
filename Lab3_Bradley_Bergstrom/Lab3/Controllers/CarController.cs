@@ -12,7 +12,7 @@ namespace Lab3.Controllers
 {
     public class CarController : Controller
     {
-        // GET: Car
+       
         public ActionResult List(int userId)
         {
             ViewBag.UserId = userId;

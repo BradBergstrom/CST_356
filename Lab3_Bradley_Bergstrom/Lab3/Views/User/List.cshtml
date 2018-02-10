@@ -53,7 +53,7 @@
             @Html.DisplayFor(modelItem => item.YearsInSchool)
         </td>
         <td>
-            @Html.ActionLink("Cars", "List", "Cars", new { id = item.Id }, null) |
+            @Html.ActionLink("Cars", "List", "Car", new { userId = item.Id },null) |
             @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
             @Html.ActionLink("Details", "Details", new { id = item.Id }) |
             @Html.ActionLink("Delete", "Delete", new { id = item.Id })
