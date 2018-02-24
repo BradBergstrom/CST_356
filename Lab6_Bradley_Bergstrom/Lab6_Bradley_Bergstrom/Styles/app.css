@@ -1,0 +1,38 @@
+﻿body {
+    background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+header {
+    color: cadetblue;
+    font-family: "Times New Roman", Times, serif;
+    height: 40px;
+    font-size: 30px;
+    padding-top: 10px;
+}
+nav {
+    background: cornflowerblue;
+    text-indent: 20px;
+    height: 40px;
+    color: cornflowerblue;
+    padding-top: 5px;
+}
+.whateveriwant{
+    color:rebeccapurple;
+    font-style: italic;
+}
+.form1 {
+    color: rebeccapurple;
+    font-style: italic;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+table{
+    color:blanchedalmond;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+footer{
+    padding-top: 90px;
+}

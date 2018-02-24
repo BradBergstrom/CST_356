@@ -1,0 +1,9 @@
+C:\Users\bberg\Documents\Computer Languages\Web\CST_356\Lab6_Bradley_Bergstrom\Lab6_Bradley_Bergstrom\bin\Lab6_Bradley_Bergstrom.dll.config
+C:\Users\bberg\Documents\Computer Languages\Web\CST_356\Lab6_Bradley_Bergstrom\Lab6_Bradley_Bergstrom\bin\Lab6_Bradley_Bergstrom.dll
+C:\Users\bberg\Documents\Computer Languages\Web\CST_356\Lab6_Bradley_Bergstrom\Lab6_Bradley_Bergstrom\bin\Lab6_Bradley_Bergstrom.pdb
+C:\Users\bberg\Documents\Computer Languages\Web\CST_356\Lab6_Bradley_Bergstrom\Lab6_Bradley_Bergstrom\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\bberg\Documents\Computer Languages\Web\CST_356\Lab6_Bradley_Bergstrom\Lab6_Bradley_Bergstrom\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\bberg\Documents\Computer Languages\Web\CST_356\Lab6_Bradley_Bergstrom\Lab6_Bradley_Bergstrom\obj\Debug\Lab6_Bradley_Bergstrom.csprojResolveAssemblyReference.cache
+C:\Users\bberg\Documents\Computer Languages\Web\CST_356\Lab6_Bradley_Bergstrom\Lab6_Bradley_Bergstrom\obj\Debug\Lab6_Bradley_Bergstrom.csproj.CoreCompileInputs.cache
+C:\Users\bberg\Documents\Computer Languages\Web\CST_356\Lab6_Bradley_Bergstrom\Lab6_Bradley_Bergstrom\obj\Debug\Lab6_Bradley_Bergstrom.dll
+C:\Users\bberg\Documents\Computer Languages\Web\CST_356\Lab6_Bradley_Bergstrom\Lab6_Bradley_Bergstrom\obj\Debug\Lab6_Bradley_Bergstrom.pdb
