@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@Html.ActionLink("User List", "Users", "Bootstrap", new { @class = "btn btn-primary btn-lg" })
+
+<div class="jumbotron text-center">
+    <h1>My First Bootstrap Page</h1>
+    <p>This is one big division!</p>
+    <p>It spans all 12 grids I think</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>Column 1</h3>
+            <p>This is a bootstrap page with 3 columns</p>
+            <p>They each resize with the page size</p>
+        </div>
+        <div class="col-sm-4">
+            <h3>Column 2</h3>
+            <p>2nd colum that is within this division</p>
+            <p class="text-success">Login Success!!</p>
+            <mark>Highlighted text</mark>
+            <p><abbr title="Oregon Institute of Technology">OIT</abbr> is a great school</p>
+            <span><p class="text-danger">DANGER!</p></span>
+        </div>
+        <div class="col-sm-4">
+            <h3>Column 3</h3>
+            <p>
+                The Bootstrap grid system has four classes:
+
+                xs (for phones - screens less than 768px wide)
+                sm (for tablets - screens equal to or greater than 768px wide)
+                md (for small laptops - screens equal to or greater than 992px wide)
+                lg (for laptops and desktops - screens equal to or greater than 1200px wide)
+            </p>
+
+        </div>
+    </div>
+</div>
+
