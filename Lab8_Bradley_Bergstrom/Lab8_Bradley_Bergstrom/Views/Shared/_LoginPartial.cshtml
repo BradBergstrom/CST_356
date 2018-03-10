@@ -1,13 +1,6 @@
 ﻿@using Microsoft.AspNet.Identity
 @if (Request.IsAuthenticated)
 {
-    using (Html.BeginForm("Cars", "Car", FormMethod.Post, new { id = "logoutForm", @class = "navbar-left" }))
-    {
-        <ul class="nav navbar-nav navbar-left">
-            <li>@Html.ActionLink("Car", "List", "Car")</li>
-        </ul>
-         }
-
             using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
             {
             @Html.AntiForgeryToken()

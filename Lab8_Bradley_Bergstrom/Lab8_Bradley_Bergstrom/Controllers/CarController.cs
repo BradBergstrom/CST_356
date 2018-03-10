@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using Microsoft.AspNet.Identity;
 
 using Lab8_Bradley_Bergstrom.Data;
 using Lab8_Bradley_Bergstrom.Data.Entities;
@@ -15,21 +15,22 @@ namespace Lab8_Bradley_Bergstrom.Controllers
     [Authorize]
     public class CarController : Controller
     {
-
-        public ActionResult List(String userId)
+        
+        public ActionResult List()
         {
-            ViewBag.UserId = userId;
 
-            var cars = GetCarsForUser(userId);
+            ViewBag.UserId = User.Identity.GetUserId();
+            
+            var cars = GetCarsForUser(User.Identity.GetUserId());
 
             return View(cars);
 
         }
 
         [HttpGet]
-        public ActionResult Create(String userId)
+        public ActionResult Create()
         {
-            ViewBag.UserId = userId;
+            ViewBag.UserId = User.Identity.GetUserId();
 
             return View();
         }
@@ -39,7 +40,7 @@ namespace Lab8_Bradley_Bergstrom.Controllers
         {
             if (ModelState.IsValid)
             {
-                Save(carViewModel);
+                Save(carViewModel, User.Identity.GetUserId());
                 return RedirectToAction("List", new { UserId = carViewModel.UserId });
             }
 
@@ -70,12 +71,12 @@ namespace Lab8_Bradley_Bergstrom.Controllers
             return dbContext.Cars.Find(carId);
         }
 
-        private void Save(CarViewModel carViewModel)
+        private void Save(CarViewModel carViewModel, String userId)
         {
             var dbContext = new ApplicationDbContext();
 
             var pet = MapToCar(carViewModel);
-
+            pet.UserId = userId;
             dbContext.Cars.Add(pet);
 
             dbContext.SaveChanges();
