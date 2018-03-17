@@ -35,6 +35,8 @@ namespace Lab5.Models.View
         [Display(Name = "Years in School")]
         public int YearsInSchool { get; set; }
 
+        public String nameString;
+
         public User MapToUser()
         {
             return new User

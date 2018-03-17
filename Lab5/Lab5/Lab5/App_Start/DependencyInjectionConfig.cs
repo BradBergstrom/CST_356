@@ -22,6 +22,8 @@ namespace Lab5.App_Start
             container.Register<iRepository, Repository>(Lifestyle.Scoped);
 
             container.Register<AppDbContext, AppDbContext>(Lifestyle.Scoped);
+             
+            container.Register<iService, Service>(Lifestyle.Scoped);
 
             // This is an extension method from the integration package.
             container.RegisterMvcControllers(Assembly.GetExecutingAssembly());

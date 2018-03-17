@@ -15,6 +15,7 @@ namespace Lab5.Services
 
         void DeleteUser(int id);
 
+        void nameString(UserViewModel userViewModel);
         ///CAr
         ///
         CarViewModel GetCar(int id);

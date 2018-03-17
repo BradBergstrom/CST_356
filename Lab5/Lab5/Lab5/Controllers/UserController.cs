@@ -56,7 +56,7 @@ namespace Lab5.Controllers
         public ActionResult Details(int id)
         {
             var userViewModel = _Users.GetUser(id);
-
+            _Users.nameString(userViewModel);
             return View(userViewModel);
         }
 

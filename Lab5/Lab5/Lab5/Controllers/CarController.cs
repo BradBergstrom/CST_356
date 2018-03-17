@@ -8,15 +8,16 @@ using Lab5.Data;
 using Lab5.Data.Entities;
 using Lab5.Models.View;
 using Lab5.Repositories;
+using Lab5.Services;
 
 namespace Lab5.Controllers
 {
     public class CarController : Controller
     {
 
-        private readonly iRepository _carService;
+        private readonly iService _carService;
 
-        public CarController(iRepository carService)
+        public CarController(iService carService)
         {
             _carService = carService;
         }
@@ -44,7 +45,7 @@ namespace Lab5.Controllers
         {
             if (ModelState.IsValid)
             {
-                var car = carViewModel.MapToCar();
+                var car = carViewModel;
                 _carService.SaveCar(car);
                 return RedirectToAction("List", new { UserId = carViewModel.UserId });
             }

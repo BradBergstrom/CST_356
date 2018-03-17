@@ -12,7 +12,7 @@ namespace Lab5.Services
     {
         private readonly iRepository _repository;
 
-        public Service(iRepository userRepository, iRepository carRepository)
+        public Service(iRepository userRepository)
         {
             _repository = userRepository;
 
@@ -60,6 +60,11 @@ namespace Lab5.Services
             user.YearsInSchool = userViewModel.YearsInSchool;
         }
 
+        public void nameString(UserViewModel userViewModel)
+        {
+            String name = userViewModel.FirstName + " " + userViewModel.LastName + " has been in school for " + userViewModel.YearsInSchool;
+            userViewModel.nameString = name;
+        }
 
         ///Car Stuff
         ///
