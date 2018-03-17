@@ -1,0 +1,13 @@
+Bradley Bergstrom
+The complete solution for the lab is on my github.
+
+Exercise 1:
+4. The [Key] attriubute tells entity framework that that class needs to be in the data base. 
+7 COnnection strings are used for connecting your database to your program and server.
+14. The users are gone because we have changed the data base, and the data was dropped.
+
+Exercise 2:
+1.  I think we want to use models because we can allow the user to create the entities, then we copy what they have and post our own model. This is more secure for our server and database.
+
+Exercise 3:
+Done
