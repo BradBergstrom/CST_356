@@ -39,6 +39,5 @@ namespace ApiApp.Controllers
             }
             return Ok(car);
         }
-
     }
 }
