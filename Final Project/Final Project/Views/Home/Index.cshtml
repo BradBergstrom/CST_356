@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Final Project CST 356</h1>
+    <p class="lead">This web site lets the user login, and create a colleciton of their cars and friends.</p>
+    <p>Bradley Bergstrom</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        @using Microsoft.AspNet.Identity
+        @if (Request.IsAuthenticated)
+        {
+           
+            {
+            @Html.AntiForgeryToken()
+
+                <li>
+                @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                </li>
+                <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+            
+            }
+        }
+        else
+        {
+        
+            <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+            <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+        
+        }
+    </div>
+    <div class="col-md-4">
+        <h2>View Colletions</h2>
+        <p>
+            @if (Request.IsAuthenticated)
+         {
+        <li>@Html.ActionLink("Car", "List", "Car")</li>
+        <li>@Html.ActionLink("Friends List", "List", "Friend")</li>
+        }
+            </p>
+        
+    </div>
+    <div class="col-md-4">
+        <h2>Contact Us</h2>
+        <p>Send me an email at notmyrealemail@gmail.com</p>
+        <p>Your email will not be read, don't worry.</p>
+    </div>
+</div>

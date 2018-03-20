@@ -1,0 +1,18 @@
+﻿p {
+    background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+table {
+    color: cadetblue;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+--this isnt used. Used Bootstrap instead
